@@ -8,14 +8,14 @@
 </head>
 <body>
 <div class="content">
-    <div class="control">
+    <div class="control widget">
         <button type="button" aria-label="New" class="button">
             
             <img src="assets/new.svg" alt="New" width="30vw">
         </button>
     </div>
-    <div class="list"></div>
-    <div class="list"></div>
+    <div class="widget"></div>
+    <div class="widget"></div>
 </div>
 </body>
 </html>
