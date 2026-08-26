@@ -41,11 +41,11 @@
         <div class="list widget">
 
             <?php
-            newCard();
-            newCard();
-            newCard();
-            newCard();
-            newCard();
+            newCard("Sample Course", "Sample Title", "Sample Description", "26/08/26");
+            newCard("", "", "", "");
+            newCard("", "", "", "");
+            newCard("", "", "", "");
+            newCard("", "", "", "");
             ?>
 
             <div class="card">
@@ -66,17 +66,18 @@
 
 <?php
 
-function newCard()
+function newCard($course, $title, $description, $date)
 {
-    echo '
+
+    echo <<<EOT
         <div class="card">
-            <div class="colour"></div>
-            <div class="title"></div>
-            <div class="description"></div>
-            <div class="dueDate"></div>
+            <div class="colour">$course</div>
+            <div class="title">$title</div>
+            <div class="description">$description</div>
+            <div class="dueDate">$date</div>
         </div>
     
-    ';
+    EOT;
 }
 
 ?>

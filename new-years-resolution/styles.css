@@ -206,9 +206,18 @@ body {
 	border-radius: 10px;
 	overflow: hidden;
 	margin-bottom: 5px;
+	color: white;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .colour {
 	height: 10%;
 	background-color: blue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.title {
+	margin: 5px;
 }
