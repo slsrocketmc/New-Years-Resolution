@@ -26,13 +26,15 @@
                 <img src="assets/new.svg" alt="New" width="30vw">
             </button>
             <nav id="dropdown-menu" class="hidden-menu">
-                <form action="process.php" method="post" target="_blank">
-                    <input type="reset" value="Reset">
+                <form action="process.php" method="post" target="_blank" class="input-form">
                     <input type="color" name="coloru" id="colour">
                     <input type="text" name="title" id="title">
                     <input type="text" name="description" id="description">
                     <input type="date" name="date" id="date">
-                    <input type="submit" value="Submit">
+                    <div class="complete-form">
+                        <input type="reset" value="Reset">
+                        <input type="submit" value="Submit">
+                    </div>
                 </form>
             </nav>
         </div>
