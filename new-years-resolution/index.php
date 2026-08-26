@@ -46,12 +46,14 @@
             newCard();
             ?>
 
-            <!-- <div class="card">
-                <div class="colour"></div>
+            <div class="card">
+                <div class="colour">
+                    <div class="course"></div>
+                </div>
                 <div class="title"></div>
                 <div class="description"></div>
                 <div class="dueDate"></div>
-            </div> -->
+            </div>
         </div>
         <div class="list widget"></div>
         <div class="list widget"></div>
