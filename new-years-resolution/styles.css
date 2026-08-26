@@ -166,6 +166,8 @@ body {
 .hidden-menu {
 	display: none;
 	position: absolute;
+	display: flex;
+
 }
 
 .hidden-menu.show {
