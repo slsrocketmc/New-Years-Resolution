@@ -27,11 +27,13 @@
             </button>
             <nav id="dropdown-menu" class="hidden-menu">
                 <form action="process.php" method="post" target="_blank" class="input-form">
-                    <input type="color" name="coloru" id="colour">
-                    <input type="text" name="title" id="title">
-                    <input type="text" name="description" id="description">
-                    <input type="date" name="date" id="date">
-                    <div class="complete-form">
+                    <input type="text" name="title" id="title" placeholder="Title">
+                    <input type="text" name="description" id="description" placeholder="Description">
+                    <div>
+                        <input type="color" name="color" id="colour">
+                        <input type="date" name="date" id="date">
+                    </div>
+                    <div>
                         <input type="reset" value="Reset">
                         <input type="submit" value="Submit">
                     </div>
