@@ -136,13 +136,15 @@ table {
 
 body {
 	background: rgb(16, 16, 16);
+	background-image: url(assets/backdrop.JPEG);
+	background-size: cover;
+	background-position: center;
 }
 
 .content {
 	margin: 5px;
 	width: calc(100vw - 10px);
 	height: calc(100vh - 10px);
-	position: static;
 	display: flex;
 	display: grid;
 	grid-template-columns: min-content repeat(3, 1fr);
@@ -166,20 +168,20 @@ body {
 .hidden-menu {
 	display: none;
 	position: absolute;
-
 }
 
 .hidden-menu.show {
 	display: block;
-	background-color: black;
-	padding: 5px;
+	background-color: rgba(16, 16, 16, 0.555);
+	backdrop-filter: blur(10px);
+	padding: 10px;
 	width: min-content;
 	height: min-content;
 	border-radius: 10px;
 }
 
 .input-form {
-	display:flex;
+	display: flex;
 	width: min-content;
 	height: min-content;
 	flex-direction: column;
@@ -193,17 +195,18 @@ body {
 	border-bottom-width: 2px;
 	color: white;
 	background: transparent;
-	
+
 }
 
 .widget {
-	background: rgb(32, 32, 32);
+	background: rgba(32, 32, 32, .5);
 	border-radius: 10px;
 }
 
 .list {
 	overflow-y: auto;
 	padding: 10px;
+	padding-bottom: 5px;
 	display: block;
 }
 
