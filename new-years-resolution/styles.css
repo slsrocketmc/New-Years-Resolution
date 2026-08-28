@@ -9,7 +9,6 @@ body {
 	margin: 5px;
 	width: calc(100vw - 10px);
 	height: calc(100vh - 10px);
-	display: flex;
 	display: grid;
 	grid-template-columns: min-content repeat(3, 1fr);
 	grid-template-rows: 1fr;

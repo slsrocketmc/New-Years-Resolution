@@ -8,6 +8,41 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="parent">
+        <div class="input-form">
+            <form action="input-process.php" method="post" target="_blank">
+                <label for="title" class="form-input-text">Title:</label>
+                <br>
+                <input type="text" name="Title" id="" class="form-input-underline">
+                <br><br>
+                <label for="description" class="form-input-text">Description:</label>
+                <br>
+                <input type="text" name="description" id="description" class="form-input-underline">
+                <br><br>
+                <label for="period" class="form-input-text">Period:</label>
+                <br>
+                <select name="period" id="period" class="form-input-underline">
+                    <option disabled selected hidden>Select One</option>
+                    <option value="1">1, AP Precalculus BC</option>
+                    <option value="2">2, Photography 1</option>
+                    <option value="3">3, English 11 HN</option>
+                    <option value="4">4, Advisory</option>
+                    <option value="5">5, French 4 HN</option>
+                    <option value="6">6, STEM Engineering HN</option>
+                    <option value="7">7, AP Physics 1</option>
+                    <option value="8">8, US VA History HN</option>
+                </select>
+                <br><br>
+                <label for="date" class="form-input-text">Due Date:</label>
+                <br>
+                <input type="date" name="date" id="date" class="form-input-underline">
+                <br><br>
+                <div>
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Create">
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
