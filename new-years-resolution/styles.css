@@ -1,8 +1,7 @@
+@import url("styles/reset.css");
+
 body {
 	background: rgb(16, 16, 16);
-/* 	background-image: url(assets/backdrop.JPEG);
-	background-size: cover;
-	background-position: center; */
 }
 
 .content {

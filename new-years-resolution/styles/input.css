@@ -1,25 +1,35 @@
+@import url("reset.css");
+
 body {
-	background-image: url(../assets/backdrop.JPEG);
-	background-size: cover;
-	background-position: center;
+	background-color: rgb(16, 16, 16);
 }
 
 .parent {
-	width: 100vw;
-	height: 100vh;
-	/* background: rgb(16, 16, 16); */
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items:last baseline;
-	gap: 10px;
+	margin: 5px;
+	width: calc(100vw - 10px);
+	height: calc(100vh - 10px);
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	column-gap: 5px;
+}
+
+.parent > * {
+	border-radius: 10px;
+	background-color: rgb(32, 32, 32);
+}
+
+.image {
+	width: 2fr;
+	height: 1fr;
+	background-image: url(../assets/backdrop.JPEG);
+	background-size: cover;
+	background-position: left;
 }
 
 .input-form {
-	background: rgb(32, 32, 32);
 	padding: calc(10px - 2.5px);
-	width: 30vw;
-	height: 100vh;
+	width: 1fr;
+	height: 1fr;
 }
 
 form * {
@@ -31,21 +41,16 @@ form * {
 	height: min-content;
 }
 
-.return-div {
-	width:100px;
-	height: 100px;
-	background: blue;
-}
-
 .form-input-text {
-	font-family: 'Courier New', Courier, monospace;
 	color: white;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .form-input-underline {
 	background: none;
 	color: white;
 	border-color: white;
+	color-scheme: dark;
 	border-top: none;
 	border-left: none;
 	border-right: none;
