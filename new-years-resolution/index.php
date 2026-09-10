@@ -18,6 +18,15 @@
         }
     </script>
     -->
+    <?php
+    /*$db = new PDO('sqlite:/db/database.db');    
+    $user = 'hayden';
+    $query = $db->prepare('SELECT * FROM :user');
+    $query->execute(['user'=> $user]);
+    $db = null;
+    $result = $query->fetchAll(PDO::FETCH_ASSOC);
+    print($result); */
+    ?>
 </head>
 
 <body>
