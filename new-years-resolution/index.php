@@ -19,13 +19,11 @@
     </script>
     -->
     <?php
-    /*$db = new PDO('sqlite:/db/database.db');    
-    $user = 'hayden';
-    $query = $db->prepare('SELECT * FROM :user');
-    $query->execute(['user'=> $user]);
-    $db = null;
+    $db = new PDO('sqlite:database.db');
+    $query = $db->prepare('SELECT * FROM "hayden"');
+    $query->execute();
     $result = $query->fetchAll(PDO::FETCH_ASSOC);
-    print($result); */
+    $db = null;
     ?>
 </head>
 
@@ -55,23 +53,19 @@
             </nav> -->
         </div>
         <div class="list widget">
-
             <?php
-            newCard("Sample Course", "Sample Title", "Sample Description", "26/08/26");
-            newCard("", "", "", "");
-            newCard("", "", "", "");
-            newCard("", "", "", "");
-            newCard("", "", "", "");
+            foreach ($result as $row) {
+                newCard($row['course'], $row['title'], $row['description'], $row['dueDate']);
+            }
             ?>
-
-            <div class="card">
+<!--             <div class="card">
                 <div class="colour">
                     <div class="course"></div>
                 </div>
                 <div class="title"></div>
                 <div class="description"></div>
                 <div class="dueDate"></div>
-            </div>
+            </div> -->
         </div>
         <div class="list widget"></div>
         <div class="list widget"></div>
