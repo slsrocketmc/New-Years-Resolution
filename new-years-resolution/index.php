@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NYR</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon-temp/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-temp/favicon-32x32.png">
@@ -20,7 +19,18 @@
     -->
     <?php
     $db = new PDO('sqlite:database.db');
-    $query = $db->prepare('SELECT * FROM "hayden"');
+
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        $inputCourse = $_POST['course'];
+        $inputTitle = $_POST['title'];
+        $inputDescription = $_POST['description'];
+        $inputDueDate = $_POST['dueDate'];
+
+        $query = $db->prepare('INSERT INTO hayden VALUES (:c, :t, :d, :dD);');
+        $query->execute([':c'=>$inputCourse, ':t'=>$inputTitlem, ':d'=>$inputDescription, ':dD'=> $inputDueDate]);
+    }
+
+    $query = $db->prepare('SELECT * FROM hayden');
     $query->execute();
     $result = $query->fetchAll(PDO::FETCH_ASSOC);
     $db = null;

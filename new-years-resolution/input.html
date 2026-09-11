@@ -12,18 +12,18 @@
     <div class="parent">
         <div class="image"></div>
         <div class="input-form">
-            <form action="/scripts/input-process.php" method="post" target="_blank">
+            <form action="index.php" method="post" target="_blank">
                 <label for="title" class="form-input-text">Title:</label>
                 <br>
-                <input type="text" name="Title" id="" class="form-input-underline">
+                <input type="text" name="title" id="title" class="form-input-underline">
                 <br><br>
                 <label for="description" class="form-input-text">Description:</label>
                 <br>
                 <input type="text" name="description" id="description" class="form-input-underline">
                 <br><br>
-                <label for="period" class="form-input-text">Period:</label>
+                <label for="course" class="form-input-text">Period:</label>
                 <br>
-                <select name="period" id="period" class="form-input-underline">
+                <select name="course" id="course" class="form-input-underline">
                     <option disabled selected hidden>Select One</option>
                     <option value="1">1, AP Precalculus BC</option>
                     <option value="2">2, Photography 1</option>
@@ -37,7 +37,7 @@
                 <br><br>
                 <label for="date" class="form-input-text">Due Date:</label>
                 <br>
-                <input type="date" name="date" id="date" class="form-input-underline">
+                <input type="date" name="dueDate" id="dueDate" class="form-input-underline">
                 <br><br>
                 <div>
                     <input type="reset" value="Reset">
