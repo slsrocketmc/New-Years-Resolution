@@ -133,3 +133,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* mine */
+body {
+	background-color: rgb(16, 16, 16);
+}
